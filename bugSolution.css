@@ -1,0 +1,16 @@
+Several approaches can mitigate the unexpected behavior:
+
+1. **Avoid mixing units:** If possible, try to use consistent units within the `calc()` function. For instance, use only percentages or only `em` units. 
+2. **Use viewport units:** Consider using viewport units such as `vw` (viewport width) or `vh` (viewport height) to define the width. These units are relative to the browser viewport and can provide more consistent behavior. 
+3. **Set a fixed width:**  If you have control over the parent container, setting a fixed width can resolve the inconsistency. 
+4. **JavaScript:** For precise and dynamic control over the element's width, use JavaScript to dynamically calculate and set the width based on the parent container's dimensions.
+
+Example using viewport units:
+
+```css
+div {
+  width: calc(50vw - 2em);
+}
+```
+
+Choose the solution that best fits the specific needs of your layout.
