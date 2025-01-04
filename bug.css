@@ -1,0 +1,1 @@
+The following CSS code snippet demonstrates an issue with unexpected behavior when using the `calc()` function with percentages and `em` units:  ```css div { width: calc(50% - 2em); } ```  In certain situations, the calculation may not produce the expected result, particularly when the parent container's width is not fixed.
